@@ -33,7 +33,7 @@ function viewCart() {
         let cartList = [];
         let lastItem = cart[cart.length - 1];
         for (let i = 0; i < cart.length -1; i++) {
-          cartList.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
+          cartList.push(`${cart[i].itemName} at $${cart[i].itemPrice}` );
           } 
         return `${cartIntro} ${cartList}, and ${lastItem.itemName} at $${lastItem.itemPrice}.`;
       
